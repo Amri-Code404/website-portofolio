@@ -1,73 +1,80 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: antiquewhite;
-    display: flex;
-    flex-direction: column;
+body {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
 }
 
-header{
-    border: 1px black solid;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    transition: all 1s ease;
+header {
+  border: 1px black solid;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  transition: all 1s ease;
 }
 
-header:hover{
-    box-shadow: 10px 10px 1px rgb(154, 157, 201) ;
-  
+@keyframes animasi-masuk {
+  from {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
-.card-pengenalan{
-
-    height: 250px;
-    display: flex;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 40px;
-    border: 1px black solid;
-    padding: 3px;
-    gap: 400px;
-    transition: all 1s ease;
+header:hover {
+  box-shadow: 10px 10px 1px rgb(154, 157, 201);
 }
 
-.card-pengenalan:hover{
-    box-shadow: 10px 10px 1px black;
-
+.card-pengenalan {
+  height: 250px;
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+  border: 1px black solid;
+  padding: 3px;
+  gap: 400px;
+  transition: all 1s ease;
+  animation: animasi-masuk 2s ease-out;
 }
 
-.card-pengenalan img{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin-top: 25px;
-    margin-left: 25px;
+.card-pengenalan:hover {
+  box-shadow: 10px 10px 1px black;
+}
+
+.card-pengenalan img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 25px;
+  margin-left: 25px;
 }
 
 .card-tulisan {
-    margin-top: 25px;
-    margin-right: 25px;
-    flex: 1;
+  margin-top: 25px;
+  margin-right: 25px;
+  flex: 1;
 }
 
-
-
-header>a{
-    margin-left: 10px;
+header > a {
+  margin-left: 10px;
 }
 
-footer{
-    position: fixed;
-    display: flex;
-    bottom: 0px;
-    height: 50px;
-    border: 1px black solid;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
+footer {
+  position: fixed;
+  display: flex;
+  bottom: 0px;
+  height: 50px;
+  border: 1px black solid;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
 }
-
