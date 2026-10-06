@@ -11,10 +11,10 @@ body{
 
 header{
     border: 1px black solid;
-    height: 30px;
+    height: 50px;
     display: flex;
     align-items: center;
-    transition: all 2s ease;
+    transition: all 1s ease;
 }
 
 header:hover{
@@ -32,6 +32,12 @@ header:hover{
     border: 1px black solid;
     padding: 3px;
     gap: 400px;
+    transition: all 1s ease;
+}
+
+.card-pengenalan:hover{
+    box-shadow: 10px 10px 1px black;
+
 }
 
 .card-pengenalan img{
@@ -49,6 +55,7 @@ header:hover{
 }
 
 
+
 header>a{
     margin-left: 10px;
 }
@@ -57,7 +64,7 @@ footer{
     position: fixed;
     display: flex;
     bottom: 0px;
-    height: 30px;
+    height: 50px;
     border: 1px black solid;
     align-items: center;
     width: 100%;
