@@ -5,6 +5,8 @@
 
 body{
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -12,6 +14,43 @@ header{
     height: 30px;
     display: flex;
     align-items: center;
+    transition: all 2s ease;
+}
+
+header:hover{
+    box-shadow: 10px 10px 1px rgb(154, 157, 201) ;
+  
+}
+
+.card-pengenalan{
+
+    height: 250px;
+    display: flex;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    border: 1px black solid;
+    padding: 3px;
+    gap: 400px;
+}
+
+.card-pengenalan img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.card-tulisan {
+    margin-top: 25px;
+    margin-right: 25px;
+    flex: 1;
+}
+
+
+header>a{
+    margin-left: 10px;
 }
 
 footer{
