@@ -1,33 +1,113 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Portofolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
     <header>
-      <a>Amri Firdaus</a>
+        <a href="#beranda" class="logo">Amri Firdaus.</a>
+
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#proyek">Proyek</a>
+            <a href="#tentang">Tentang</a>
+        </nav>
     </header>
-    <div class="card-pengenalan">
-      <img src="https://placehold.co/600x400" alt="Ini gambar" />
 
-      <div class="card-tulisan">
-        <h3>ini judul</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum
-          tellus elit. Duis et suscipit elit. Cras vestibulum sagittis elit,
-          dignissim bibendum elit. Proin tincidunt magna in massa porta sodales.
-          Donec bibendum libero pharetra nibh tempus, a pretium justo semper.
-          Donec fringilla eget ipsum luctus euismod. Nullam in lectus quis odio
-          bibendum mollis molestie ut leo. Proin vitae magna ut odio egestas
-          fermentum. Sed at ornare arcu.
-        </p>
-      </div>
-    </div>
+    <main>
+        <section class="card-pengenalan reveal" id="beranda">
+            <img
+                src="https://placehold.co/600x600"
+                alt="Foto profil"
+            >
 
-    <footer>@2026</footer>
+            <div class="card-tulisan">
+                <p class="label">HALO, SAYA ADALAH</p>
+                <h1>Amri Firdaus</h1>
+                <h3>Mahasiswa & Calon Developer</h3>
+
+                <p>
+                    Saya sedang belajar mengembangkan aplikasi dan website.
+                    Website ini menjadi tempat untuk memperkenalkan diri,
+                    menyimpan proyek, serta mendokumentasikan perjalanan
+                    belajar saya di bidang teknologi.
+                </p>
+
+                <a href="#proyek" class="tombol">Lihat Proyek ↘</a>
+            </div>
+        </section>
+
+        <section class="bagian reveal" id="proyek">
+            <div class="judul-bagian">
+                <p class="label">APA YANG SAYA KERJAKAN</p>
+                <h2>Proyek Saya.</h2>
+            </div>
+
+            <div class="daftar-proyek">
+                <article class="proyek">
+                    <span class="nomor">01</span>
+                    <h3>HTML Scanner</h3>
+                    <p>
+                        Program Python sederhana untuk mempelajari
+                        proses pemindaian dan pengolahan data website.
+                    </p>
+                    <span class="tag">Python</span>
+                    <span class="tag">Web Scraping</span>
+                </article>
+
+                <article class="proyek">
+                    <span class="nomor">02</span>
+                    <h3>Website Portofolio</h3>
+                    <p>
+                        Website pribadi untuk menampilkan identitas,
+                        proyek, dan perkembangan kemampuan pemrograman.
+                    </p>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </article>
+
+                <article class="proyek">
+                    <span class="nomor">03</span>
+                    <h3>Proyek Berikutnya</h3>
+                    <p>
+                        Tempat untuk proyek selanjutnya.
+                        Ide baru selalu terbuka untuk dikembangkan.
+                    </p>
+                    <span class="tag">Coming Soon</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="bagian tentang reveal" id="tentang">
+            <p class="label">SEDIKIT TENTANG SAYA</p>
+            <h2>Masih belajar,<br>terus berkembang.</h2>
+
+            <p>
+                Saya percaya bahwa kemampuan pemrograman berkembang
+                melalui praktik, eksperimen, dan kemauan untuk memahami
+                bagaimana sesuatu bekerja. Karena itu, saya senang
+                membuat proyek kecil sebagai sarana belajar.
+            </p>
+
+            <a href="https://github.com/Amri-Code404" target="_blank"
+               rel="noopener noreferrer" class="tombol">
+                Kunjungi GitHub ↗
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="tahun"></span> Amri Firdaus.</p>
+        <p>Dibuat sambil belajar.</p>
+    </footer>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
+
