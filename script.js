@@ -47,7 +47,7 @@ formKontak.addEventListener('submit', async (event) => {
 
     if (!captcha || !captcha.value.trim()) {
         statusKontak.textContent =
-            'Silakan selesaikan CAPTCHA terlebih dahulu.';
+            'Silakan selesaikan CAPTCHA terlebih dahulu. Saya pakai captcha biar tak kena spam bot :)';
         statusKontak.style.color = '#b42318';
         return;
     }
@@ -73,7 +73,7 @@ formKontak.addEventListener('submit', async (event) => {
         }
 
         statusKontak.textContent =
-            'Pesan berhasil dikirim. Terima kasih!';
+            'Pesan berhasil dikirim.... Terima kasih atas saran atau masukannya!';
         statusKontak.style.color = 'green';
 
         formKontak.reset();
