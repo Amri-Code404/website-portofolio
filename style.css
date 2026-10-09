@@ -349,3 +349,87 @@ footer {
     }
 }
 
+
+
+/* KONTAK */
+
+.deskripsi-kontak {
+    margin-top: 12px;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+#kontak form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.field-kontak {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.field-kontak label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.field-kontak input,
+.field-kontak select,
+.field-kontak textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--hitam);
+    border-radius: 0;
+    background-color: var(--putih);
+    color: var(--hitam);
+    font: inherit;
+    transition: box-shadow 0.2s ease;
+}
+
+.field-kontak textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.field-kontak input:focus,
+.field-kontak select:focus,
+.field-kontak textarea:focus {
+    outline: none;
+    box-shadow: 4px 4px 0 var(--ungu);
+}
+
+.tombol-kirim {
+    align-self: flex-start;
+    cursor: pointer;
+    font: inherit;
+}
+
+.catatan-kontak {
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: -10px;
+}
+
+/* CAPTCHA tidak meluber di layar kecil */
+
+#kontak [data-netlify-recaptcha="true"] {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+@media (max-width: 550px) {
+    #kontak {
+        padding: 25px;
+    }
+
+    .tombol-kirim {
+        width: 100%;
+    }
+}
+
+
+
